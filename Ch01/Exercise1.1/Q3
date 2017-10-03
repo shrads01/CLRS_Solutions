@@ -1,0 +1,13 @@
+Ques-3: Select a data structure that you have seen previously, and discuss its strengths and
+limitations.
+
+Array :
+Strengths:
+1. Random accesses : We can access any element of an array using the index value and the base address of the array. Every element can be accessed in O(1) time (assuming whole array is in the main memory)
+2. Serial allocation : Usually, the arrays occupy consecutive memory locations for its elements. So, we can delete the array in one step by deallocating the whole memory area at once. Another advantage of serial allocation is, if the array is too big, accessing consecutive elements takes fewer disk seeks than say in linked lists(where elements could be scattered across the memory).
+3. Faster Search : Algorithms like binary search and interpolated search can only be applied on SORTED arrays.
+
+ Limitations:
+1. Deleting/Inserting random elements : When we delete a random element in an array we may need to shift all elements ahead of it left by one place - worst case O(n). Same is the case when we are maintaining a sorted array and want to insert a random element.
+2. Unsorted Array is not good for searching when we have very large number of elements - as we need to perform Linear search - O(n) time.
+3. Static nature :- In most languages, array are statically allocated. So, we may end of reserving extra space then needed or we may not be able to add more elements as needed.
